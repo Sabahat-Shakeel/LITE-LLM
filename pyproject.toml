@@ -1,0 +1,20 @@
+[project]
+name = "chatbot"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "syeda", email = "sbtshakeel61@gmail.com" }
+]
+requires-python = ">=3.13"
+dependencies = [
+    "chainlit>=2.3.0",
+    "litellm>=1.63.3",
+]
+
+[project.scripts]
+chatbot = "chatbot:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
