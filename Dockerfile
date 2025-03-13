@@ -11,4 +11,6 @@ COPY . /app
 RUN pip install --no-cache-dir uv chainlit litellm
 
 # 5️⃣ Default Command Jab Container Run Ho
-CMD ["chainlit", "run", "chatbot.py", "--port", "80", "--headless"]
+EXPOSE 5000  
+
+CMD ["chainlit", "run", "chatbot.py", "--port", "5000", "--headless"]
